@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="navbar" id="navbar">
+                <button class="navbar-toggler" onclick="toggleNavbar()">☰</button>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="main card">
+            <div class="head">
+                <img src="https://img.freepik.com/free-vector/man-profile-account-picture_24908-81754.jpg?t=st=1740194834~exp=1740198434~hmac=a9ab00de4ff8c2db261a49e67ec68c4a2893204a68335fea690a62d620ba4782&amp;w=1060" alt="profile picture">
+                <div class="head info">
+                    <h4 class="name">Ridam Sharma</h4>
+                    <p class="address">Chandausi, India</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="description">
+                    <p class="about">Web Developer</p>
+                </div>
+                <div id="links" class="card-body-links">
+                    <a href="#" class="link-btn">GitHub</a>
+                    <a href="#" class="link-btn">LinkedIn</a>
+                    <a href="#" class="link-btn">Twitter</a>
+                    <a href="#" class="link-btn">Instagram</a>
+                </div>
+            </div>
+        </section>
+        <script>
+            function toggleNavbar() {
+                document.getElementById("navbar").classList.toggle("open");
+            }
+        </script>
+    </body>
+
+</html>
